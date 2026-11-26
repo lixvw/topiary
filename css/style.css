@@ -1597,7 +1597,8 @@ html {
     border-top: 1px solid var(--text);
   }
 
-  .header { position: relative; padding: 32px var(--pad) 20px; }
+  .header { position: sticky; top: 0; padding: 32px var(--pad) 20px; }
+  html { scroll-padding-top: 100px; }
   .header .btn { display: none; }
 
   .burger-toggle { display: none; }
