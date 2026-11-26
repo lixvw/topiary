@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стрижка рослин у Львові</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <span class="logo__name">Параняк Ірина</span>
+      <span class="logo__role">топіарний митець</span>
+    </a>
+
+    <!-- Чекбокс-перемикач для бургер-меню на чистому CSS -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="menu" id="menu">
+      <a href="#services">Послуги</a>
+      <a href="#project">Проєкти</a>
+      <a href="#price_list">Підписка</a>
+      <a href="#AboutUs">Про митця</a>
+      <a href="#connection" class="menu__contact">Написати</a>
+    </nav>
+
+    <a href="#connection" class="btn btn--outline">Написати</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__badge"><span class="hero__badge-dot"></span>Приймаю замовлення на сезон</p>
+        <h1>
+          Стрижу сади
+          <span class="hero__accent">у живі скульптури</span>
+        </h1>
+
+        <p class="hero__desc">
+          Формую живоплоти, кулі та спіралі з туї, самшиту й падуба — від
+          першого креслення форми до щорічного догляду за нею.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#connection" class="btn btn--green">Обговорити проєкт</a>
+          <a href="#project" class="hero__link">Переглянути роботи</a>
+        </div>
+
+        <ul class="hero__tags">
+          <li>Формування живоплотів</li>
+          <li>Топіарні фігури</li>
+          <li>Спіралі та яруси</li>
+          <li>Сезонний догляд</li>
+        </ul>
+      </div>
+
+      <div class="hero__image">
+        <div class="hero__photo"></div>
+      </div>
+    </section>
+
+    <section class="topiary" id="topiary">
+      <div class="topiary__content">
+        <h2 class="topiary__title">
+            Що таке <span class="text-green">топіарій</span> і <br>навіщо він вашому саду
+        </h2>
+
+        <p class="topiary__desc">
+          Топіарій — мистецтво надавати живим рослинам чітку форму: кулі, спіралі, арки, фігури. Тут немає миттєвого результату: форма проявляється поступово, і перші чіткі обриси видно лише через кілька сезонів терпеливого догляду. Натомість замість разової стрижки ви отримуєте живу скульптуру, яка з роками стає дедалі виразнішою.
+        </p>
+
+        <ul class="topiary__list">
+          <li>Форма, підібрана під ваш ландшафт і освітлення ділянки</li>
+          <li>Здоровіша крона завдяки регулярному прорідженню</li>
+          <li>Чітка геометрія двору протягом усього року</li>
+        </ul>
+      </div>
+
+      <div class="topiary__visual">
+        <div class="topiary__circle-bg"></div>
+        <div class="topiary__circle-img">
+          <img src="img/topiary.png" alt="Топіарій у саду" width="800" height="800" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція послуг, перетворена на article -->
+    <section class="services" id="services">
+      <h2 class="services__title">Послуги</h2>
+
+      <div class="services__grid">
+        <article class="service-card service-card--dark">
+          <div class="service-card__image">
+            <img src="img/service-1.jpg" alt="Санітарна стрижка" width="760" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__name">Санітарна стрижка</h3>
+            <p class="service-card__desc">
+              Раз на сезон вирівнюємо форму й очищаємо рослину: прибираємо сухі гілки та зайвий приріст, що збив силует.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card service-card--lime">
+          <div class="service-card__image">
+            <img src="img/service-2.jpg" alt="Стрижка куль" width="760" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__name">Стрижка куль</h3>
+            <p class="service-card__desc">
+              Тримаємо ідеально круглу форму й симетрію кулі під час кожного планового візиту.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card service-card--dark service-card--center">
+          <div class="service-card__image">
+            <img src="img/service-3.jpg" alt="Стрижка топіарної форми" width="760" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__name">Стрижка топіарної <br>форми</h3>
+            <p class="service-card__desc">
+              Надаємо кроні чіткого силуету — конуси, арки, фігурні форми за шаблоном або на око, під ваш задум.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    <section class="steps" id="steps">
+      <img src="img/steps-decor.png" alt="" class="steps__decor" width="420" height="420" loading="lazy" decoding="async">
+
+      <h2 class="steps__title">4 кроки до охайної рослини</h2>
+
+      <div class="steps__grid">
+        <div class="step-card">
+          <span class="step-card__num">01</span>
+          <h3 class="step-card__heading">Огляд та <br> узгодження форми</h3>
+          <p class="step-card__desc">
+            Оцінюємо ділянку, стан і особливості рослин. Обговорюємо побажання, створюємо ескіз або підбираємо точний шаблон і затверджуємо його перед початком робіт.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-card__num">02</span>
+          <h3 class="step-card__heading">Санітарна чистка <br> рослини</h3>
+          <p class="step-card__desc">
+            Ретельно вичищаємо середину крони: видаляємо сухе й пошкоджене гілля, торішню хвою та відмерлі пагони, відкриваючи доступ світлу й повітрю.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-card__num">03</span>
+          <h3 class="step-card__heading">Формування та <br>стрижка</h3>
+          <p class="step-card__desc">
+            Вирізаємо задуману форму вручну за допомогою професійного інструменту, покроково контролюючи геометрію, симетрію та лінії з усіх ракурсів.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-card__num">04</span>
+          <h3 class="step-card__heading">Догляд та<br>підтримка форми</h3>
+          <p class="step-card__desc">
+            Прибираємо ділянку після стрижки, даємо рекомендації з поливу й підживлення та складаємо графік візитів, щоб крона тримала форму і залишалася здоровою.
+          </p>
+        </div>
+      </div>
+    </section>
+     
+    <section class="projects" id="project">
+      <img src="img/projects-bg.png" alt="" class="projects__decor" width="720" height="480" loading="lazy" decoding="async">
+
+      <h2 class="projects__title">Виконані проєкти</h2>
+
+      <div class="projects__grid">
+        <div class="projects__row projects__row--1">
+          <div class="project-box project-box--437">
+            <img src="img/project-1.jpg" alt="Живопліт до та після формувальної стрижки" width="874" height="680" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--205">
+            <img src="img/project-2.jpg" alt="Підстрижена топіарна рослина в приватному саду" width="410" height="680" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--205">
+            <img src="img/project-3.jpg" alt="Топіарна форма після сезонного догляду" width="410" height="680" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--435 project-box--review">
+            <p class="review-text">«Двір виглядає як у ботанічному саду. Приїжджають за графіком, і форма завжди в порядку.»</p>
+            <span class="review-author">— Марта, Винники</span>
+          </div>
+        </div>
+
+        <div class="projects__row projects__row--2">
+          <div class="project-box project-box--207">
+            <img src="img/project-4.jpg" alt="Акуратно сформована крона декоративної рослини" width="414" height="640" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--207">
+            <img src="img/project-5.jpg" alt="Геометрична форма з вічнозеленої рослини" width="414" height="640" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--434">
+            <img src="img/project-6.jpg" alt="Занедбана рослина до та після стрижки" width="868" height="640" loading="lazy" decoding="async">
+          </div>
+          <div class="project-box project-box--436 project-box--review">
+            <p class="review-text">«Взяли занедбаний живопліт і привели у форму за два сезони. Тепер тільки річна підписка.»</p>
+            <span class="review-author">— Ігор, Брюховичі</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція цін із картками-артіклами та галочками -->
+    <section class="pricing" id="price_list">
+      <div class="pricing__header">
+        <h2 class="pricing__title">Догляд, який працює на форму</h2>
+        <p class="pricing__subtitle">
+          Регулярний догляд допомагає зберігати чіткі силуети, здоровий вигляд і акуратність топіарних рослин протягом усього сезону.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="price-card price-card--lime">
+          <div class="price-card__top">
+            <h3 class="price-card__name">Разовий візит</h3>
+            <div class="price-card__cost">
+              <span class="price-card__amount">1500 ₴</span>
+              <span class="price-card__period">/ візит</span>
+            </div>
+            <p class="price-card__intro">
+              Окремий візит для тих, кому потрібно надати рослинам охайної форми або освіжити вже наявну.
+            </p>
+          </div>
+
+          <ul class="price-card__features">
+            <li><span>✓</span> Огляд і консультація на місці</li>
+            <li><span>✓</span> Формувальна стрижка</li>
+            <li><span>✓</span> Видалення сухих гілок</li>
+          </ul>
+
+          <a href="#connection" class="price-card__btn">Замовити</a>
+        </article>
+
+        <article class="price-card price-card--green price-card--featured">
+          <span class="price-card__badge">Найпопулярніший</span>
+          <div class="price-card__top">
+            <h3 class="price-card__name">Регулярний<br>догляд</h3>
+            <div class="price-card__cost">
+              <span class="price-card__amount">3000 ₴</span>
+              <span class="price-card__period">/ місяць</span>
+            </div>
+            <p class="price-card__intro">
+              Два планові візити на місяць — щоб підтримувати форму рослин акуратною протягом сезону.
+            </p>
+          </div>
+
+          <ul class="price-card__features">
+            <li><span>✓</span> Підтримка форми та стрижка</li>
+            <li><span>✓</span> Контроль стану рослин</li>
+            <li><span>✓</span> Пріоритетний запис</li>
+          </ul>
+
+          <a href="#connection" class="price-card__btn">Замовити</a>
+        </article>
+
+        <article class="price-card price-card--lime">
+          <div class="price-card__top">
+            <h3 class="price-card__name">Преміум-догляд</h3>
+            <div class="price-card__cost">
+              <span class="price-card__amount">5500 ₴</span>
+              <span class="price-card__period">/ місяць</span>
+            </div>
+            <p class="price-card__intro">
+              Для садів із великою кількістю топіарних рослин і складними формами, що потребують уваги.
+            </p>
+          </div>
+
+          <ul class="price-card__features">
+            <li><span>✓</span> До 4 візитів на місяць</li>
+            <li><span>✓</span> Робота зі складними формами</li>
+            <li><span>✓</span> Сезонне коригування</li>
+          </ul>
+
+          <a href="#connection" class="price-card__btn">Замовити</a>
+        </article>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Порівняння пакетів догляду">
+        <table class="price-table">
+          <caption>Порівняння пакетів догляду. Остаточна ціна узгоджується після огляду ділянки.</caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Пакет</th>
+              <th scope="col">Візитів</th>
+              <th scope="col">Що входить</th>
+              <th scope="col">Ціна</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Разовий візит</th>
+              <td>1</td>
+              <td>Огляд, формувальна стрижка, видалення сухих гілок</td>
+              <td>1500 ₴ / візит</td>
+            </tr>
+            <tr>
+              <th scope="row">Регулярний догляд</th>
+              <td>2 на місяць</td>
+              <td>Підтримка форми, контроль стану рослин, пріоритетний запис</td>
+              <td>3000 ₴ / місяць</td>
+            </tr>
+            <tr>
+              <th scope="row">Преміум-догляд</th>
+              <td>до 4 на місяць</td>
+              <td>Складні форми, сезонне коригування</td>
+              <td>5500 ₴ / місяць</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="pricing__note">
+        *Вартість залежить від кількості, розміру та складності форм. Остаточна ціна узгоджується після огляду ділянки.
+      </p>
+    </section>
+
+    <section class="about" id="AboutUs">
+      <div class="about__content">
+        <h2 class="about__title">Хто формує ваш сад</h2>
+
+        <p class="about__desc">
+          Ірина Параняк займається топіарним мистецтвом понад 10 років. Вчилася колоніальній стрижці у Франції, а тепер формує сади по всій Львівській області — від приватних двориків до готельних територій.
+        </p>
+
+        <div class="about__stats">
+          <div class="stat-item">
+            <span class="stat-item__number">10+</span>
+            <span class="stat-item__label">Років практики</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-item__number">120+</span>
+            <span class="stat-item__label">Доглянутих рослин</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__visual">
+        <div class="about__circle-bg"></div>
+        <div class="about__circle-img">
+          <img src="img/about.png" alt="Ірина Параняк за роботою" width="840" height="840" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="connection">
+      <div class="contact__header">
+        <h2 class="contact__title">Обговоримо ваш сад</h2>
+        <p class="contact__subtitle">
+          Залиште контакти — менеджер зв'яжеться з вами, щоб дізнатися більше <br>про ваш сад і запропонувати оптимальний догляд.
+        </p>
+      </div>
+
+      <div class="contact__body">
+        <form class="contact__form" action="https://formspree.io/f/xdegkboj" method="post">
+          <input type="hidden" name="_subject" value="Заявка з сайту: топіарний митець">
+          <input class="form-trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset class="form-group form-fieldset">
+            <legend class="sr-only">Ваші контакти</legend>
+
+            <div class="form-row">
+              <div class="form-col">
+                <label class="form-label" for="name">Ваше ім'я</label>
+                <input class="form-input-box" type="text" id="name" name="name"
+                       placeholder="Олександр" autocomplete="name" minlength="2" required>
+              </div>
+
+              <div class="form-col">
+                <label class="form-label" for="phone">Номер телефону</label>
+                <input class="form-input-box" type="tel" id="phone" name="phone"
+                       placeholder="+380 __ ___ __ __" autocomplete="tel" inputmode="tel"
+                       pattern="\+?[0-9\s\(\)\-]{10,18}"
+                       title="Введіть номер, наприклад +380671234567 або 067 123 45 67"
+                       required>
+              </div>
+            </div>
+
+            <div class="form-row form-row--extra">
+              <div class="form-col">
+                <label class="form-label" for="date">Бажана дата візиту <span class="form-label__opt">(необов'язково)</span></label>
+                <input class="form-input-box" type="date" id="date" name="date">
+              </div>
+
+              <div class="form-col">
+                <label class="form-label" for="plant">Яка рослина</label>
+                <select class="form-input-box form-select" id="plant" name="plant">
+                  <option value="">Ще не визначився</option>
+                  <option value="Туя">Туя</option>
+                  <option value="Самшит">Самшит</option>
+                  <option value="Падуб">Падуб</option>
+                  <option value="Інша">Інша</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-services form-fieldset">
+            <legend class="form-legend">Що вас цікавить?</legend>
+
+            <div class="form-radio-row">
+              <input class="form-radio" type="radio" id="service-once" name="service" value="Разовий догляд" checked>
+              <label for="service-once">Разовий догляд</label>
+            </div>
+            <div class="form-radio-row">
+              <input class="form-radio" type="radio" id="service-regular" name="service" value="Регулярний догляд">
+              <label for="service-regular">Регулярний догляд</label>
+            </div>
+            <div class="form-radio-row">
+              <input class="form-radio" type="radio" id="service-new" name="service" value="Формування нової форми">
+              <label for="service-new">Формування нової форми</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label class="form-label" for="note">Коментар <span class="form-label__opt">(необов'язково)</span></label>
+            <textarea class="form-input-box form-input-box--area" id="note" name="note" rows="4"
+                      maxlength="500" placeholder="Скільки рослин, яка порода, яку форму хочете"></textarea>
+          </div>
+
+          <div class="form-check-row">
+            <input class="form-check" type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Погоджуюсь на обробку персональних даних</label>
+          </div>
+
+          <button class="form-btn-lime" type="submit">Надіслати форму</button>
+
+          <p class="form-note">Ім'я та телефон використовуються лише для зв'язку з вами щодо вашого саду.</p>
+        </form>
+
+        <div class="contact__visual">
+          <div class="contact__circle-bg"></div>
+          <div class="contact__circle-img">
+            <img src="img/contact.jpeg" alt="Гортензія в саду" width="1120" height="1120" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Фонове відео (стружка з хвойних рослин) -->
+    <video class="footer__video" autoplay muted loop playsinline preload="metadata" poster="img/footer-poster.jpg" aria-hidden="true">
+      <source src="img/leaves-fall.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Затемнення поверх відео для гарної читабельності тексту -->
+    <div class="footer__overlay"></div>
+
+    <div class="footer__main">
+      <div class="footer__col footer__col--brand">
+        <h3 class="footer__title">Параняк Ірина</h3>
+        <p class="footer__tagline">Створюю форми природи</p>
+        <p class="footer__text">
+          Топіарне мистецтво — це про гармонію форми, простір і турботу. Ми формуємо сади, які надихають.
+        </p>
+        <p class="footer__highlight">Ваш сад — наша турбота</p>
+      </div>
+
+      <div class="footer__col footer__col--services">
+        <h4 class="footer__subtitle">Послуги</h4>
+        <ul class="footer__list">
+          <li>Разовий догляд</li>
+          <li>Регулярний догляд</li>
+          <li>Преміум-догляд</li>
+          <li>Формування нових форм</li>
+          <li>Консультація</li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--contact">
+        <h4 class="footer__subtitle">Зв'язок</h4>
+        <a href="tel:+380677814658" class="footer__phone">+380 67 781 46 58</a>
+        <p class="footer__location">Львів та область</p>
+
+        <div class="footer__socials">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Topiary Art. Усі права захищені.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
